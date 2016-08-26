@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<br>
+<div id="test1" class="col s12">
+    
+<div class="allCards" style="align:center;">
+</div>
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="{% static 'cal/calcu.png' %}">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Calculator</span>
+        <p><a href="{% url 'index:calc' %}">Open</a></p>
+    </div>
+    
+  </div>
+<div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="{% static 'images/divisas.png' %}">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Divisas</span>
+        <p><a href="{% url 'index:divisas' %}">Open</a></p>
+    </div>
+  </div>
+<div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="{% static 'images/camara.png' %}">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Camera</span>
+        <p><a href="{% url 'index:gallery' %}">Open</a></p>
+    </div>
+
+  </div>
+<div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="{% static 'images/cron.png' %}">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Cronometro</span>
+        <p><a href="{% url 'index:cron' %}">Open</a></p>
+    </div>
+
+  </div>
+<div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="{% static 'images/form.png' %}">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Formulario</span>
+        <p><a href="{% url 'index:formulario' %}">Open</a></p>
+
+    </div>
+  </div>
+</div>
+<style>
+    .card{
+        display: inline-block;
+        height: auto;
+        width: 225px;
+        margin-left: 35px;
+    }
+</style>
+
+{% endblock %}
+
